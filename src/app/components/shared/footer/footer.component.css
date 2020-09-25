@@ -1,0 +1,20 @@
+footer{
+    background-color: #B2DFDB;
+    text-align: center;
+    /* Código para poner footer en la parte de abajo */
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
+
+.footer2{
+    background-color: #009688;
+    height: 30px;
+    text-align: center;
+    margin: auto;
+    font-size: 15px;
+}
+
+i{
+    color: black;
+}

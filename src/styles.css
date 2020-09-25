@@ -1,17 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 
-html,
-body {
-    height: 100%;
-}
-
-body {
+head{
     margin: 0;
-    font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
-.main-container {
-    /* margin-top: 20px; */
-    /* margin-left: 70px;
-    margin-right: 70px; */
+body{
+    /* Margin: 0 quita los bordes que el navegador trae por defecto */
+    margin: 0;
 }

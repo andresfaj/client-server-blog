@@ -12,6 +12,7 @@ import { AboutMeComponent } from './components/about-me/about-me.component';
 import { ContactMeComponent } from './components/contact-me/contact-me.component';
 import { MyProductsComponent } from './components/my-products/my-products.component';
 import { BlogComponent } from './components/blog/blog.component';
+import { FooterComponent } from './components/shared/footer/footer.component';
 
 // Animaciones
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -26,6 +27,9 @@ import {MatListModule} from '@angular/material/list';
 // Responsive
 import { FlexLayoutModule } from '@angular/flex-layout';
 
+//Carrousel
+import { CarouselModule } from 'ngx-owl-carousel-o';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,7 +38,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     AboutMeComponent,
     ContactMeComponent,
     MyProductsComponent,
-    BlogComponent
+    BlogComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -45,7 +50,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatIconModule,
     MatSidenavModule,
     MatListModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    CarouselModule 
   ],
   providers: [],
   bootstrap: [AppComponent]
