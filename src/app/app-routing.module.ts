@@ -7,16 +7,18 @@ import { MyProductsComponent } from './components/my-products/my-products.compon
 import { BlogComponent } from './components/blog/blog.component';
 
 
-const routes: Routes = [
+const ROUTES: Routes = [
   {path: '', component: HomeComponent},
   {path: 'sobremi', component: AboutMeComponent},
   {path: 'contacto', component: ContactMeComponent},
   {path: 'productos', component: MyProductsComponent},
-  {path: 'mamablogger', component: BlogComponent}
+  {path: 'mamablogger', component: BlogComponent},
+  //Rutas diferentes se llevan al home
+  {path: '**', redirectTo: '', pathMatch: 'full'}
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(ROUTES)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

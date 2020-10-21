@@ -32,7 +32,7 @@ export class HomeComponent implements OnInit {
         items: 3
       },
       940: {
-        items: 1
+        items: 2
       }
     },
     nav: true

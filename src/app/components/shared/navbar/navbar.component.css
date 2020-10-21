@@ -1,5 +1,17 @@
-.example-fill-remaining-space {
+.example-spacer{
     /* This fills the remaining space, by using flexbox. 
        Every toolbar row uses a flexbox row layout. */
     flex: 1 1 auto;
+}
+
+.logo-navbar{
+    width: 60px;
+    height: 50px;
+}
+
+.texto-navbar{
+    /* Se remueve el underline de la etiqueta a */
+    text-decoration: none;
+    /* Se remueve el color original de la etiqueta a */
+    color: inherit;
 }

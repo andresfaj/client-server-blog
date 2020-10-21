@@ -2,9 +2,9 @@ footer{
     background-color: #B2DFDB;
     text-align: center;
     /* Código para poner footer en la parte de abajo */
-    bottom: 0;
+    /* bottom: 0;
     position: fixed;
-    width: 100%;
+    width: 100%; */
 }
 
 .footer2{

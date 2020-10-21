@@ -1,37 +1,21 @@
 <mat-toolbar color="primary">
-    <mat-toolbar-row>
-        <button mat-icon-button (click)="sidenav.toggle()" fxShow="true" fxHide.gt-sm>
-            <mat-icon>menu</mat-icon>
-        </button>
-        <img src="assets/logo-bg.png" alt="" width="40" height="40">
-        <span>Naydú Jaramillo</span>
-        <!-- This fills the remaining space of the current row -->
-        <span class="example-fill-remaining-space"></span>
-        <div fxShow="true" fxHide.lt-md>
-            <button mat-button [routerLink]="['']">Inicio</button>
-            <button mat-button [routerLink]="['mamablogger']">Mamá Blogger</button>
-            <button mat-button [routerLink]="['productos']">Mis productos</button>
-            <button mat-button [routerLink]="['sobremi']">Sobre mi</button>
-            <button mat-button [routerLink]="['contacto']">Contáctame</button>
-        </div>
-        <!-- <span>Right Aligned Text</span> -->
-    </mat-toolbar-row>
+    <button mat-icon-button fxShow="true" fxHide.gt-sm>
+        <mat-icon>menu</mat-icon>
+    </button>
+    <a [routerLink]="['']">
+        <img class="logo-navbar" src="assets/logo-bg.png" alt="Naydu Jaramillo">
+    </a>
+    <a [routerLink]="['']" class="texto-navbar"><span>Naydú Jaramillo</span></a>    
+    <span class="example-spacer"></span>
+
+    <div fxShow="true" fxHide.lt-md>
+        <button mat-button [routerLink]="['']">Inicio</button>
+        <button mat-button [routerLink]="['mamablogger']">Mamá Blogger</button>
+        <button mat-button [routerLink]="['productos']">Mis productos</button>
+        <button mat-button [routerLink]="['sobremi']">Sobre mi</button>
+        <button mat-button [routerLink]="['contacto']">Contáctame</button>
+
+    </div>
+
+    
 </mat-toolbar>
-
-<!-- <mat-sidenav-container fxFlexFill> -->
-<mat-sidenav-container>
-    <mat-sidenav #sidenav>
-        <mat-nav-list>
-            <a [routerLink]="['']" mat-list-item>Inicio</a>
-            <a [routerLink]="['mamablogger']" mat-list-item>Mamá Blogger</a>
-            <a [routerLink]="['productos']" mat-list-item>Mis productos</a>
-            <a [routerLink]="['sobremi']" mat-list-item>Sobre mi</a>
-            <a [routerLink]="['contacto']" mat-list-item>Contáctame</a>
-        </mat-nav-list>
-    </mat-sidenav>
-    <mat-sidenav-content>
-        <router-outlet></router-outlet>
-    </mat-sidenav-content>
-</mat-sidenav-container>
-
-
