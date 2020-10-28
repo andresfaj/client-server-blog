@@ -1,18 +1,26 @@
-footer{
+.pie-de-pagina{
     background-color: #B2DFDB;
     text-align: center;
+    height: 40px;
     /* Código para poner footer en la parte de abajo */
     /* bottom: 0;
     position: fixed;
     width: 100%; */
+    /* Para centrar contenido tanto vertical como horizontalmente. Técnica FLEXBOX */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.footer2{
+.pie-de-pagina-2{
     background-color: #009688;
-    height: 30px;
-    text-align: center;
-    margin: auto;
     font-size: 15px;
+    height: 30px;
+    /* Para centrar contenido tanto vertical como horizontalmente. Técnica FLEXBOX */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 i{
