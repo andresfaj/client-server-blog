@@ -19,10 +19,17 @@
     /* Para centrar contenido tanto vertical como horizontalmente. Técnica FLEXBOX */
     display: flex;
     align-items: center;
-    justify-content: center;
-    
+    justify-content: center;    
 }
 
 i{
     color: black;
 }
+
+@media (max-width: 600px) {
+    /* Se usa para la letra del footer en un iphone 5S 320 x 568*/
+    .pie-de-pagina-2{
+        font-size: 13px;
+    }
+}
+
