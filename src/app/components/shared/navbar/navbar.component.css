@@ -31,3 +31,14 @@
 .mat-list-item{
     color: white;
 }
+
+/* .toolbar__row-items a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+} */
+
+/* Pseudoclase para hacer un cambio cuando el mouse pasa encima*/
+.toolbar__row-items a:hover{
+   color: black;
+}

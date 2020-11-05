@@ -5,8 +5,8 @@ body{
     height: 100%;
 }
 
-
 body{
     /* Margin: 0 quita los bordes que el navegador trae por defecto */
     margin: 0;
+    padding: 0;
 }

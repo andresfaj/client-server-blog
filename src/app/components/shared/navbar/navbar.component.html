@@ -1,6 +1,6 @@
-<div>
-    <mat-toolbar color="primary">
-        <mat-toolbar-row>
+<header>
+    <mat-toolbar color="primary" class="toolbar">
+        <mat-toolbar-row class="toolbar__row">
             <button mat-icon-button fxShow="true" fxHide.gt-sm (click)="sidenav.toggle()">
                 <mat-icon>menu</mat-icon>
             </button>
@@ -10,12 +10,12 @@
             <a [routerLink]="['']" class="texto-navbar"><span>Naydú Jaramillo</span></a>    
             <span class="example-spacer"></span>
             
-            <div fxShow="true" fxHide.lt-md>
-                <button mat-button [routerLink]="['']">Inicio</button>
-                <button mat-button [routerLink]="['mamablogger']">Mamá Blogger</button>
-                <button mat-button [routerLink]="['productos']">Mis productos</button>
-                <button mat-button [routerLink]="['sobremi']">Sobre mi</button>
-                <button mat-button [routerLink]="['contacto']">Contáctame</button>
+            <div fxShow="true" fxHide.lt-md class="toolbar__row-items">
+                <a mat-button [routerLink]="['']">Inicio</a>
+                <a mat-button [routerLink]="['mamablogger']">Mamá Blogger</a>
+                <a mat-button [routerLink]="['productos']">Mis productos</a>
+                <a mat-button [routerLink]="['sobremi']">Sobre mi</a>
+                <a mat-button [routerLink]="['contacto']">Contáctame</a>
             </div>
         </mat-toolbar-row>
     </mat-toolbar>
@@ -51,8 +51,8 @@
         </mat-sidenav-content>
         
     </mat-sidenav-container>
+</header>
 
-</div>
 
 
     
