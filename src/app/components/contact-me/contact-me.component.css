@@ -1,0 +1,12 @@
+.contact-form{
+    width: 400px;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.main-btn-form{
+    margin-top: 10px;
+}

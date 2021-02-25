@@ -14,6 +14,8 @@ import { MyProductsComponent } from './components/my-products/my-products.compon
 import { BlogComponent } from './components/blog/blog.component';
 import { FooterComponent } from './components/shared/footer/footer.component';
 
+import { ReactiveFormsModule } from '@angular/forms'
+
 // Animaciones
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -23,6 +25,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatListModule} from '@angular/material/list';
+import {MatInputModule} from '@angular/material/input';
 
 // Responsive
 import { FlexLayoutModule } from '@angular/flex-layout';
@@ -50,8 +53,10 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
     MatIconModule,
     MatSidenavModule,
     MatListModule,
+    MatInputModule,
     FlexLayoutModule,
-    CarouselModule 
+    CarouselModule ,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
