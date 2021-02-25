@@ -1,60 +1,59 @@
-<header>
-    <mat-toolbar color="primary" class="toolbar">
-        <mat-toolbar-row class="toolbar__row">
-            <button mat-icon-button fxShow="true" fxHide.gt-sm (click)="sidenav.toggle()">
-                <mat-icon>menu</mat-icon>
-            </button>
-            <a [routerLink]="['']">
-                <img class="logo-navbar" src="assets/logo-bg.png" alt="Naydu Jaramillo">
-            </a>
-            <a [routerLink]="['']" class="texto-navbar"><span>Naydú Jaramillo</span></a>    
-            <span class="example-spacer"></span>
-            
-            <div fxShow="true" fxHide.lt-md class="toolbar__row-items">
-                <a mat-button [routerLink]="['']">Inicio</a>
-                <a mat-button [routerLink]="['mamablogger']">Mamá Blogger</a>
-                <a mat-button [routerLink]="['productos']">Mis productos</a>
-                <a mat-button [routerLink]="['sobremi']">Sobre mi</a>
-                <a mat-button [routerLink]="['contacto']">Contáctame</a>
-            </div>
-        </mat-toolbar-row>
-    </mat-toolbar>
+<mat-sidenav-container fullscreen>
+    <mat-sidenav #sidenav class="sidenav">
+        <mat-nav-list>
+            <mat-list-item>
+                <mat-icon mat-list-icon>home</mat-icon>
+                <a [routerLink]="['']">Inicio</a>   
+            </mat-list-item>
+            <mat-list-item>                    
+                <mat-icon mat-list-icon>menu_book</mat-icon>
+                <a [routerLink]="['mamablogger']">Mamá blogger</a>                   
+            </mat-list-item>
+            <mat-list-item>
+                <mat-icon mat-list-icon>ballot</mat-icon>
+                <a [routerLink]="['productos']">Mis productos</a> 
+            </mat-list-item>
+            <mat-list-item>
+                <mat-icon mat-list-icon>info</mat-icon>
+                <a [routerLink]="['sobremi']">Sobre mi</a> 
+            </mat-list-item>
+            <mat-list-item>
+                <mat-icon mat-list-icon>contact_mail</mat-icon>
+                <a [routerLink]="['contacto']">Contáctame</a> 
+            </mat-list-item>
+        </mat-nav-list>
+    </mat-sidenav>
     
-    <mat-sidenav-container fxFlexFill>
-        <mat-sidenav #sidenav class="sidenav">
-            <mat-nav-list>
-                <mat-list-item>
-                    <mat-icon mat-list-icon>home</mat-icon>
-                    <a [routerLink]="['']">Inicio</a>   
-                </mat-list-item>
-                <mat-list-item>                    
-                    <mat-icon mat-list-icon>menu_book</mat-icon>
-                    <a [routerLink]="['mamablogger']">Mamá blogger</a>                   
-                </mat-list-item>
-                <mat-list-item>
-                    <mat-icon mat-list-icon>ballot</mat-icon>
-                    <a [routerLink]="['productos']">Mis productos</a> 
-                </mat-list-item>
-                <mat-list-item>
-                    <mat-icon mat-list-icon>info</mat-icon>
-                    <a [routerLink]="['sobremi']">Sobre mi</a> 
-                </mat-list-item>
-                <mat-list-item>
-                    <mat-icon mat-list-icon>contact_mail</mat-icon>
-                    <a [routerLink]="['contacto']">Contáctame</a> 
-                </mat-list-item>
-            </mat-nav-list>
-        </mat-sidenav>
-        
-        <mat-sidenav-content fxFlexFill>
+    <mat-sidenav-content fxLayout="column">
+        <mat-toolbar color="primary" class="toolbar">
+            <mat-toolbar-row class="toolbar__row">
+                <button mat-icon-button fxShow="true" fxHide.gt-sm (click)="sidenav.toggle()">
+                    <mat-icon>menu</mat-icon>
+                </button>
+                <a [routerLink]="['']">
+                    <img class="logo-navbar" src="assets/logo-bg.png" alt="Naydu Jaramillo">
+                </a>
+                <a [routerLink]="['']" class="texto-navbar"><span>Naydú Jaramillo</span></a>    
+                <span class="example-spacer"></span>
+                
+                <div fxShow="true" fxHide.lt-md class="toolbar__row-items">
+                    <a mat-button [routerLink]="['']">Inicio</a>
+                    <a mat-button [routerLink]="['mamablogger']">Mamá Blogger</a>
+                    <a mat-button [routerLink]="['productos']">Mis productos</a>
+                    <a mat-button [routerLink]="['sobremi']">Sobre mi</a>
+                    <a mat-button [routerLink]="['contacto']">Contáctame</a>
+                </div>
+            </mat-toolbar-row>
+        </mat-toolbar>
+
+        <div style="height: auto; width: auto;">
+
             <router-outlet> </router-outlet>
-        </mat-sidenav-content>
-        
-    </mat-sidenav-container>
-</header>
+        </div>
 
-
-
+        <app-footer fxFlexOffset="auto"></app-footer>
+    </mat-sidenav-content>
     
+</mat-sidenav-container>
 
 
